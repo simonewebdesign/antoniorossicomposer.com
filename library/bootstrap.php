@@ -62,6 +62,8 @@ foreach ( $_GET as $g ) {
 	$get[] = $g;
 }
 
+/* the following code isn't necessary for this project, since it has only one single page.
+
 $template_name = isset($get[0]) ? $get[0] : false;
 
 if ( $template_name ) {
@@ -89,6 +91,9 @@ if ( $template_name ) {
 	}
 	
 } else {
+
+*/
+
 	// loading the default template. It's the first one in db
 	$template_db = $db->query("SELECT * FROM templates WHERE _id = 1 LIMIT 1");
 	
@@ -97,7 +102,7 @@ if ( $template_name ) {
 	}else{
 		die('FATAL ERROR: Default template record not found in database.');
 	}
-}
+//}
 
 
 
