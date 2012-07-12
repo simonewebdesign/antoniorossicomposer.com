@@ -1,0 +1,52 @@
+form {}
+	form fieldset {}
+	form input {}
+	form textarea {}
+
+	#navbar {
+		width:900px;
+		margin: 0 auto;
+		background:#fff;
+		box-shadow:0 10px 15px 6px #fff;
+		padding-top:10px;		
+	}
+		#navbar ul {
+			list-style:none;
+			padding-left:0;
+			margin:0;
+		}
+			#navbar ul li {
+				float:right;
+				text-align:center;
+			}
+				#navbar ul li a {
+					display:block;
+					font-family:'ApollineRegular';
+					padding-left:22px;
+					margin-left:4px;
+					
+					-webkit-transition:all .5s;
+					-moz-transition:all .5s;
+					ms-transition:all .5s;
+					-o-transition:all .5s;
+					transition:all .5s;
+					height:72px;
+					color:#000;
+				}
+				#navbar ul li a:hover {
+					background-image:url('../../img/menu_bg.png');
+				}
+				#navbar ul li a:active {
+
+				}
+				
+				#navbar ul li a.current {
+					color:#fff;
+					background:#000;
+				}
+					#navbar ul li a.current:hover {
+
+					}		
+					#navbar ul li a.current:active {
+						
+					}
