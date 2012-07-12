@@ -9,15 +9,15 @@
 <!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="it"> <!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="<?=$lang?>"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-  <title><?=empty($template['title']) ? '' : $template['title'] . ' | '?><?=$settings['site']['name']?></title>
-  <meta name="description" content="<?=$template['metaDescription']?>">
-  <meta name="keywords"	content="<?=$template['metaKeywords']?>">
+  <title>Antonio Rossi Composer</title>
+  <meta name="description" content="<?=$meta[$lang]['description']?>">
+  <meta name="keywords"	content="<?=$meta[$lang]['keywords']?>">
   <meta name="author" content="<?=$settings['site']['author']?>">
-  <meta name="robots" content="<?=($template == 'backoffice') ? 'noindex,nofollow' : 'index,follow'?>">
+  <meta name="robots" content="<?=($template['name'] == 'backoffice') ? 'noindex,nofollow' : 'index,follow'?>">
   <meta name="viewport" content="width=device-width; "> <!-- user-scalable=0 -->
   <link rel="icon" type="image/png" href="<?=ROOT?>favicon.png">
   <?=$css?>
@@ -68,32 +68,32 @@
 	<div id=main role=main>
 
 		<section id=biography>
-			<?php include_once INC . 'biografia.php'; ?>
+			<?php include_once INC . $lang . '/1-biography.php'; ?>
 		</section>
 		<section id=discography>
-			<?php include_once INC . 'discografia.php'; ?>
+			<?php include_once INC . $lang . '/2-discography.php'; ?>
 		</section>
 		<section id=events>
-			<?php include_once INC . 'eventi.php'; ?>
+			<?php include_once INC . $lang . '/3-events.php'; ?>
 		</section>
 		<section id=photos>
-			<?php include_once INC . 'foto.php'; ?>
+			<?php include_once INC . $lang . '/4-photos.php'; ?>
 		</section>
-		<section id=publications>
-			<?php include_once INC . 'pubblicazioni.php'; ?>
+		<section id=papers>
+			<?php include_once INC . $lang . '/5-papers.php'; ?>
 		</section>
 		<section id=videos>
-			<?php include_once INC . 'video.php'; ?>
+			<?php include_once INC . $lang . '/6-videos.php'; ?>
 		</section>
 		<section id=contacts>
-			<?php include_once INC . 'contatti.php'; ?>
+			<?php include_once INC . $lang . '/7-contacts.php'; ?>
 		</section>
 		
 	</div>
 
 	<div id=aside role=complementary>
 		<br>
-		<?php include_once INC . 'aside.php'; ?>
+		<?php include_once INC . $lang . '/aside.php'; ?>
 	</div>
 
 </div>
