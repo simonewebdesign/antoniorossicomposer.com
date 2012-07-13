@@ -5,17 +5,25 @@ html, body {
 	padding:0;
 }
 
+html {
+
+}
+
 body {
 	overflow:hidden;
 	color:#333;
 	text-align:center;
 	margin-top:120px; /*header's height*/
 	font-family:'ApollineRegular';
-	font-size:1.1em;	
-	/*
-	color:#fff;*/
-	background:url('../../img/textures/lefft_background.jpg');
+	font-size:1.1em;
 	
+	background-color:#e8dac0;
+	background-image:url('../../img/rossi_bg.png'),
+	url('../../img/textures/lefft_background.jpg');
+	background-repeat:no-repeat, repeat;
+	background-attachment:fixed;
+	background-position:left bottom;
+	text-shadow:1px 1px 2px #e8dac0;
 }
 
 a {
@@ -152,6 +160,9 @@ img:hover {
 	#wrapper {
 		width:900px;
 		margin:0 auto;
+/*		position:relative;
+		left:20%;
+*/
 	}
 	
 	/*** columns ***/
