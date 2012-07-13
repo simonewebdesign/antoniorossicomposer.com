@@ -22,8 +22,8 @@ form {}
 				#navbar ul li a {
 					display:block;
 					font-family:'ApollineRegular';
-					padding-left:22px;
 					margin-left:4px;
+					padding-left:12px;					
 					
 					-webkit-transition:all .5s;
 					-moz-transition:all .5s;
@@ -36,7 +36,8 @@ form {}
 					text-decoration:underline;
 				}
 				#navbar ul li a:hover {
-					background-image:url('../../img/menu_bg.png');
+					/*background-image:url('../../img/menu_bg.png');*/
+					background:rgba(85,85,85,.5); /* #555555 at 50% opacity */
 				}
 				#navbar ul li a:active {
 

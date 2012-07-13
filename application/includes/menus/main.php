@@ -2,32 +2,34 @@
 
 $menu = array(
 	'it' => array(
-		'contacts'  	=> 'Contatti',
-		'videos' 		=> 'Video',
-		'papers'	 	=> 'Pubblicazioni',
-		'photos' 		=> 'Foto',
-		'events'		=> 'Eventi',
-		'discography'	=> 'Discografia',
-		'biography'		=> 'Biografia'
+		'contatti',
+		'video',
+		'pubblicazioni',
+		'foto',
+		'eventi',
+		'ascolti',
+		'discografia',
+		'biografia'
 	),
 	'en' => array(
-		'contacts'  	=> 'Contacts',
-		'videos' 		=> 'Videos',
-		'papers'	 	=> 'Papers',
-		'photos' 		=> 'Photos',
-		'events'		=> 'Events',
-		'discography'	=> 'Discography',
-		'biography'		=> 'Biography'
+		'contacts',
+		'videos',
+		'papers',
+		'photos',
+		'events',
+		'listenings',
+		'discography',
+		'biography'
 	)
 );
 
 echo "<ul class=clearfix>";
 
-foreach ( $menu[$lang] as $menu_slug => $menu_entry ) {
+foreach ( $menu[$lang] as $m ) {
 	
 	echo "<li>";
-		echo '<a href="#' . $menu_slug . '"';
-		echo '>' . $menu_entry . '</a>';
+		echo '<a href="#' . $m . '"';
+		echo '>' . ucfirst($m) . '</a>';
 	echo "</li>";
 }
 echo "</ul>";

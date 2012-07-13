@@ -4,7 +4,7 @@ $(window).scroll(function() { // biography fix when scrolling up
 	console.log($('html').offset().top);
 	if ( $('html').offset().top == 0 ) {
 		$('#navbar').find('.current').removeClass('current');
-		$('#navbar ul li a[href="#biography"]').addClass('current');
+		$('#navbar ul li a[href^="#bio"]').addClass('current');
 	}
 });
 

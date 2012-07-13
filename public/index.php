@@ -66,34 +66,26 @@
 <div id=wrapper class=clearfix> <!-- 2 columns: main and aside -->
 
 	<div id=main role=main>
-
-		<section id=biography>
-			<?php include_once INC . $lang . '/1-biography.php'; ?>
-		</section>
-		<section id=discography>
-			<?php include_once INC . $lang . '/2-discography.php'; ?>
-		</section>
-		<section id=events>
-			<?php include_once INC . $lang . '/3-events.php'; ?>
-		</section>
-		<section id=photos>
-			<?php include_once INC . $lang . '/4-photos.php'; ?>
-		</section>
-		<section id=papers>
-			<?php include_once INC . $lang . '/5-papers.php'; ?>
-		</section>
-		<section id=videos>
-			<?php include_once INC . $lang . '/6-videos.php'; ?>
-		</section>
-		<section id=contacts>
-			<?php include_once INC . $lang . '/7-contacts.php'; ?>
-		</section>
+	
+	<?php
+	
+	$pages = array_reverse($menu[$lang]);
+//	var_dump($pages);
+	$i = 1;
+	
+	foreach ($pages as $page) {
+		echo "<section id=$page>";
+			include_once INC . 'pages/' . $lang . "/$i-$page.php";
+		echo "</section>";
+		$i++;
+	}
+	?>
 		
 	</div>
 
 	<div id=aside role=complementary>
 		<br>
-		<?php include_once INC . $lang . '/aside.php'; ?>
+		<?php include_once INC . 'pages/' . $lang . '/aside.php'; ?>
 	</div>
 
 </div>
