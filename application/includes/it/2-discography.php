@@ -24,11 +24,11 @@ Donec non nulla metus, in ultricies odio. Nunc id odio sit amet ipsum blandit eg
 </p>
 
 		<h3>This is a Sample Subtitle</h3>
-		
+<!--		
 		<a class="fancybox" href="<?=ROOT?>img/antonio-rossi.png">
 			<img class="lazy" src="<?=ROOT?>img/white.jpg" data-original="<?=ROOT?>img/antonio-rossi.png" width=200 height=300 alt="Antonio Rossi">
 		</a>
-		
+-->		
 		<p>
 		Vivamus sodales mattis pretium. Etiam euismod, tellus a accumsan egestas, mi turpis pulvinar orci, id volutpat lectus erat quis est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut quis tellus mauris. Donec in arcu massa, ac cursus arcu. Donec vel sollicitudin lorem. In suscipit congue mattis. Aliquam erat volutpat. Fusce sit amet leo eros. Praesent ac luctus velit.
 		</p>

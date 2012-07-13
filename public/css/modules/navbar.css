@@ -6,9 +6,9 @@ form {}
 	#navbar {
 		width:900px;
 		margin: 0 auto;
-		background:#fff;
-		box-shadow:0 10px 15px 6px #fff;
-		padding-top:10px;		
+		/*background:#fff;
+		box-shadow:0 10px 15px 6px #fff;*/
+		padding-top:10px;	
 	}
 		#navbar ul {
 			list-style:none;
@@ -32,6 +32,8 @@ form {}
 					transition:all .5s;
 					height:72px;
 					color:#000;
+					
+					text-decoration:underline;
 				}
 				#navbar ul li a:hover {
 					background-image:url('../../img/menu_bg.png');
@@ -42,7 +44,7 @@ form {}
 				
 				#navbar ul li a.current {
 					color:#fff;
-					background:#000;
+					background:#555;
 				}
 					#navbar ul li a.current:hover {
 

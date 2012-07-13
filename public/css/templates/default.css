@@ -12,10 +12,10 @@ body {
 	margin-top:120px; /*header's height*/
 	font-family:'ApollineRegular';
 	font-size:1.1em;	
-/*
-color:#fff;
-background:url('../../img/textures/black-noise.png');
-*/
+	/*
+	color:#fff;*/
+	background:url('../../img/textures/lefft_background.jpg');
+	
 }
 
 a {
@@ -60,7 +60,7 @@ img:hover {
 
 #intro-wrapper {
 	background-color:#111;
-	/*background-image:url('../../img/textures/black-noise.png');*/
+	background-image:url('../../img/textures/noise-333.png');
 	color:#eee;
 	text-align:center;
 	text-shadow:0 0 1px #000;
@@ -133,6 +133,8 @@ img:hover {
 	line-height:120px;
 	z-index:1000;
 	border-top:5px solid black;
+	border-bottom:1px solid black;
+	background:url('../../img/textures/lefft_background.jpg');	
 }
 	#logo {
 		margin:0;
@@ -211,6 +213,16 @@ section:nth-child(4) {
 }
 */
 
+#flags {
+	position:fixed;
+	bottom:10px;
+	right:10px;
+}
+	#flags img {
+		border:0;
+		padding:0;
+	}
+
 /* special */
-::-moz-selection {background:#444;}
-::selection {background:#444;}
+::-moz-selection {background:#06e;}
+::selection {background:#06e;}

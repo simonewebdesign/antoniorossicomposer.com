@@ -36,7 +36,7 @@
 
 	<div id="intro">
 		<h1>AntonioRossi</h1>
-		<h2>composer</h2>
+		<h2>Composer</h2>
 	</div>
 	
 	<div id="skip-intro">
@@ -104,6 +104,16 @@
 	</div>
 </div>
 
+<div id=flags>
+	<a href="<?=ROOT?>">it
+		<img src="<?=ROOT?>img/flags/it.png" width=32 height=32 alt="Italiano">
+	</a>
+	<a href="<?=ROOT?>en">en
+		<img src="<?=ROOT?>img/flags/en.png" width=32 height=32 alt="English">
+	</a>
+
+</div>
+
 
   <!-- End of Content /// JavaScript Begin --->
 
@@ -147,8 +157,7 @@
   <!-- end 	 fancybox -->
   
   <script src="<?=ROOT?>plugins/waypoints/waypoints.min.js"></script>
-
-    <script src="<?=ROOT?>js/scroll.js"></script>
+  <script src="<?=ROOT?>js/scroll.js"></script>
 
   <!--
   <script>
