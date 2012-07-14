@@ -17,7 +17,7 @@ $menu = array(
 		'papers',
 		'photos',
 		'events',
-		'listenings',
+		'tracks',
 		'discography',
 		'biography'
 	)

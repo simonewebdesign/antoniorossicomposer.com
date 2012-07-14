@@ -23,7 +23,6 @@ body {
 	background-repeat:no-repeat, repeat;
 	background-attachment:fixed;
 	background-position:left bottom;
-	text-shadow:0px 0px 3px #e8dac0;
 }
 
 a {
@@ -164,6 +163,12 @@ img:hover {
 		left:20%;
 */
 	}
+		#wrapper h2 {
+			text-shadow:0px 0px 4px #e8dac0;			
+		}
+		#wrapper p {
+			text-shadow:0px 0px 2px #e8dac0;			
+		}
 	
 	/*** columns ***/
 	#main,

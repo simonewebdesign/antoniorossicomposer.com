@@ -30,8 +30,8 @@
 
 <div id="intro-wrapper">
 	<audio id="intro-audio" autoplay>
-	  <source src="media/audio/main_page_music.ogg" type="audio/ogg">
-	  <source src="media/audio/main_page_music.mp3" type="audio/mp3">
+	  <source src="media/audio/01.ogg" type="audio/ogg">
+	  <source src="media/audio/01.mp3" type="audio/mp3">
 	</audio>
 
 	<div id="intro">
@@ -97,10 +97,10 @@
 </div>
 
 <div id=flags>
-	<a href="<?=ROOT?>">it
+	<a href="<?=ROOT?>">
 		<img src="<?=ROOT?>img/flags/it.png" width=32 height=32 alt="Italiano">
 	</a>
-	<a href="<?=ROOT?>en">en
+	<a href="<?=ROOT?>en">
 		<img src="<?=ROOT?>img/flags/en.png" width=32 height=32 alt="English">
 	</a>
 
