@@ -1,7 +1,9 @@
 <h2>Discografia</h2>
+<?php
 
-<!--
-<a class="fancybox" href="<?=ROOT?>img/antonio-rossi.png">
-	<img class="lazy" src="<?=ROOT?>img/white.jpg" data-original="<?=ROOT?>img/antonio-rossi.png" width=200 height=300 alt="Antonio Rossi">
-</a>
--->
+$discs = $db->query("SELECT * FROM discs");
+
+while ( $disc = $discs->fetchObject() ) {
+	
+	include INC . 'disc.php';
+}

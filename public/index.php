@@ -150,7 +150,6 @@
   
   <script src="<?=ROOT?>plugins/waypoints/waypoints.min.js"></script>
   <script src="<?=ROOT?>js/scroll.js"></script>
-
   <!--
   <script>
     var _gaq=[['_setAccount','<?=ANALYTICS_CODE?>'],['_trackPageview']];

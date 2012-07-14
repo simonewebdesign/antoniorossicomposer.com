@@ -68,6 +68,7 @@ $(document).ready(function(){
 		$('#navbar').find('.current').removeClass('current');
 		$(this).addClass('current');
 	});
-*/	
+*/
+
 	
 });
