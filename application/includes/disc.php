@@ -1,7 +1,7 @@
 <div class=disc>
 
 	<a class="fancybox" rel=discs href="<?=ROOT?>img/covers/<?=$disc->id?>.png">
-		<img class="lazy" src="<?=ROOT?>img/white.jpg" data-original="<?=ROOT?>img/covers/<?=$disc->id?>.png" width=240 height=240 alt="<?=$disc->title?>">
+		<img class="lazy" src="<?=ROOT?>img/trans.gif" data-original="<?=ROOT?>img/covers/<?=$disc->id?>.png" width=240 height=240 alt="<?=$disc->title?>">
 	</a>
 
 	<div class=metadata>

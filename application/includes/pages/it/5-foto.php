@@ -1,1 +1,1 @@
-<h2>Foto</h2><a class="fancybox" href="<?=ROOT?>img/prova2.jpg">	<img class="lazy" src="<?=ROOT?>img/white.jpg" data-original="<?=ROOT?>img/prova2.jpg" width=560></a>
+<h2>Foto</h2><a class="fancybox" href="<?=ROOT?>img/prova2.jpg">	<img class="lazy" src="<?=ROOT?>img/trans.gif" data-original="<?=ROOT?>img/prova2.jpg" width=560></a>
