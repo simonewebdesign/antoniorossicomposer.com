@@ -3,7 +3,7 @@
 $menu = array(
 	'it' => array(
 		'contatti',
-		'video',
+//		'video',
 		'pubblicazioni',
 		'foto',
 		'eventi',
@@ -13,7 +13,7 @@ $menu = array(
 	),
 	'en' => array(
 		'contacts',
-		'videos',
+//		'videos',
 		'papers',
 		'photos',
 		'events',
