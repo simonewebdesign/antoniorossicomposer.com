@@ -1,1 +1,1 @@
-<h2>Foto</h2><?php$photos_folder = 'img/photos/';$photos = scandir($photos_folder);//var_dump($photos);foreach ($photos as $photo) {	if ( is_file($photos_folder . $photo) ) {		include INC . 'photo.php';	}}
+<h2>Foto</h2><?php$photos_folder = 'img/photos/';$photos = scandir($photos_folder);//var_dump($photos);foreach ($photos as $photo) {	if ( is_file($photos_folder . $photo) ) {		if ($photo != 'Thumbs.db') {			include INC . 'photo.php';		}	}}
