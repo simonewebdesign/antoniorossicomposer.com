@@ -1,0 +1,1 @@
+<a class="fancybox photo" rel="photos" href="<?=ROOT?>img/photos/<?=$photo?>">	<img class="lazy" src="<?=ROOT?>img/trans.gif" data-original="<?=ROOT?>img/photos/<?=$photo?>" width=200></a>

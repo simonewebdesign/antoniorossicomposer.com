@@ -65,7 +65,7 @@ img {
 	transition:all .3s;	
 }
 img:hover {
-	opacity:.9;
+	/*opacity:.9;*/
 }
 
 #intro-wrapper {
@@ -242,6 +242,11 @@ section:nth-child(4) {
 		padding:0;
 	}
 
+.photo {
+	display:inline-block;
+	margin:5px;
+}
+
 /* special */
-::-moz-selection {background:#06e;}
-::selection {background:#06e;}
+::-moz-selection {background:#555555;}
+::selection {background:#555555;}

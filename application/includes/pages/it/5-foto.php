@@ -1,1 +1,1 @@
-<h2>Foto</h2><a class="fancybox" href="<?=ROOT?>img/prova2.jpg">	<img class="lazy" src="<?=ROOT?>img/trans.gif" data-original="<?=ROOT?>img/prova2.jpg" width=560></a>
+<h2>Foto</h2><?php$photos_folder = 'img/photos/';$photos = scandir($photos_folder);//var_dump($photos);foreach ($photos as $photo) {	if ( is_file($photos_folder . $photo) ) {		include INC . 'photo.php';	}}
