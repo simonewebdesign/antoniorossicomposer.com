@@ -1,1 +1,1 @@
-<section id=eventi class=clearfix><?php include INC . 'pages/it/4-eventi.php'; ?><img class="noborder" src="<?=ROOT?>img/cit-prova.png"></section>
+<section id=eventi class=clearfix><?php include INC . 'pages/it/4-eventi.php'; ?><img class="noborder" src="<?=ROOT?>img/cit-prova.png"><?php include INC . 'example_scores.php'; ?></section>
