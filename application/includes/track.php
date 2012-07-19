@@ -1,5 +1,5 @@
 <div itemscope itemtype="http://schema.org/MusicRecording" class=track id=track<?=$track->id?>>
-	<h3 itemprop=name><?=$track->title?></h3>
+	<h3 itemprop=name><?=$i?>) <?=$track->title?></h3>
 	<audio controls preload=none>
 	<?php foreach ($extensions as $ext) { ?>
 		<source src="<?=ROOT?>media/audio/<?=$track->id?>.<?=$ext?>" itemprop=audio>-

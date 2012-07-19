@@ -5,9 +5,12 @@
 $lang = isset($get[0]) ? $get[0] : 'it';
 
 // stylesheets
-$css.= str_replace(':ph', 'modules/navbar', STYLESHEET);
-$css.= str_replace(':ph', 'modules/contact-form', STYLESHEET);
-$css.= str_replace(':ph', 'classes/disc', STYLESHEET);
+$css.= str_replace(':ph', 'modules/navbar', 		STYLESHEET);
+$css.= str_replace(':ph', 'modules/contact-form', 	STYLESHEET);
+$css.= str_replace(':ph', 'classes/disc', 			STYLESHEET);
+$css.= str_replace(':ph', 'classes/track', 			STYLESHEET);
+$css.= str_replace(':ph', 'classes/event',			STYLESHEET);
+$css.= str_replace(':ph', 'classes/paper', STYLESHEET);
 
 // meta tags
 $meta = array(

@@ -5,9 +5,9 @@
 	</a>
 
 	<div class=metadata>
-		<h4 class=title><?=$disc->title?></h4>
-		<h5 class=author><?=$disc->author?></h5>
-		<span class=track><?=$disc->track?></span>
+		<h3 class=title><?=$disc->title?></h4>
+		<h4 class=author><?=$disc->author?></h5>
+		<span class=track><?=$disc->track?></span><br>
 		<span class=album><?=$disc->album?></span>
 		<span class=year><?=$disc->year?></span>
 	</div>

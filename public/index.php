@@ -71,20 +71,21 @@
 	
 	$pages = array_reverse($menu[$lang]);
 //	var_dump($pages);
-	$i = 1;
+	$p_count = 1;
 	
 	foreach ($pages as $page) {
-		echo "<section id=$page class=clearfix>";
-			include_once INC . 'pages/' . $lang . "/$i-$page.php";
-		echo "</section>";
-		$i++;
+		if ($page != 'eventi' && $page != 'events') {
+			echo "<section id=$page class=clearfix>";
+				include_once INC . 'pages/' . $lang . "/$p_count-$page.php";
+			echo "</section>";
+		}
+		$p_count++;		
 	}
 	?>
 		
 	</div>
 
 	<div id=aside role=complementary>
-		<br>
 		<?php include_once INC . 'pages/' . $lang . '/aside.php'; ?>
 	</div>
 
