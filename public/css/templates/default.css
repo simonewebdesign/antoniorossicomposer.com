@@ -55,9 +55,10 @@ h2 {
 }
 
 img {
+	/*
 	padding:5px;
 	border:1px solid black;
-
+	*/
 	-webkit-transition:all .3s;
 	-moz-transition:all .3s;
 	ms-transition:all .3s;
@@ -246,10 +247,6 @@ section:nth-child(4) {
 .photo {
 	display:inline-block;
 	margin:5px;
-}
-
-.fancybox {
-	padding:0 !important;
 }
 
 /* special */

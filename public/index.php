@@ -29,7 +29,7 @@
 <body>
 
 <div id="intro-wrapper">
-	<audio id="intro-audio" autoplay>
+	<audio id="intro-audio"> <!-- autoplay -->
 	  <source src="media/audio/01.ogg" type="audio/ogg">
 	  <source src="media/audio/01.mp3" type="audio/mp3">
 	</audio>
@@ -74,7 +74,7 @@
 	$i = 1;
 	
 	foreach ($pages as $page) {
-		echo "<section id=$page>";
+		echo "<section id=$page class=clearfix>";
 			include_once INC . 'pages/' . $lang . "/$i-$page.php";
 		echo "</section>";
 		$i++;

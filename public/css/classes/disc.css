@@ -1,0 +1,43 @@
+.disc {
+	width:600px;
+	margin:10px 0;
+	
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+	background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );	
+}
+	.disc a.fancybox,
+	.disc .metadata {
+		display:block !important;
+		float:left !important;
+	}
+	
+	.disc a.fancybox {
+		width:200px;
+		margin-right:10px;
+		border:1px solid #000;
+	}
+	
+	.disc .metadata {
+		width:388px;
+	}
+	
+	.disc .metadata .title {
+		font-weight:bold;
+	}
+	.disc .metadata .author {
+		font-style:italic;
+	}
+	.disc .metadata .track {
+		
+	}
+	.disc .metadata .album {
+		
+	}
+	.disc .metadata .year {
+		display:block;
+	}	

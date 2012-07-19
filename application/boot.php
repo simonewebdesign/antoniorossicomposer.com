@@ -7,6 +7,7 @@ $lang = isset($get[0]) ? $get[0] : 'it';
 // stylesheets
 $css.= str_replace(':ph', 'modules/navbar', STYLESHEET);
 $css.= str_replace(':ph', 'modules/contact-form', STYLESHEET);
+$css.= str_replace(':ph', 'classes/disc', STYLESHEET);
 
 // meta tags
 $meta = array(

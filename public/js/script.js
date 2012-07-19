@@ -41,7 +41,9 @@ setTimeout( function() {
 $(document).ready(function(){
 
 
-/*	$('#bg').scroll(function(){
+/* floating background
+
+	$('#bg').scroll(function(){
 		var x = $('#bg').scrollTop();
 		$('#bg').css('background-position','0% '+parseInt(-x/5)+'px');
 	});
@@ -69,7 +71,5 @@ $(document).ready(function(){
 		$(this).addClass('current');
 	});
 */
-
-//    .attr('rel', 'gallery')
 	
 });
