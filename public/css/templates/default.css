@@ -55,7 +55,7 @@ h2 {
 }
 
 img {
-	padding:15px;
+	padding:5px;
 	border:1px solid black;
 
 	-webkit-transition:all .3s;
@@ -102,6 +102,7 @@ img:hover {
 			color:#fff;
 			text-shadow:0 0 3px #000;
 			font-size:6em;
+			margin-top:300px;
 		}
 
 		#intro h2 {
@@ -245,6 +246,10 @@ section:nth-child(4) {
 .photo {
 	display:inline-block;
 	margin:5px;
+}
+
+.fancybox {
+	padding:0 !important;
 }
 
 /* special */

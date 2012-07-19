@@ -143,7 +143,9 @@
 	
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$(".fancybox").fancybox();
+			$(".fancybox").fancybox({
+				padding : 0
+			});
 		});
 	</script>
   <!-- end 	 fancybox -->

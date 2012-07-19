@@ -70,5 +70,6 @@ $(document).ready(function(){
 	});
 */
 
+//    .attr('rel', 'gallery')
 	
 });
