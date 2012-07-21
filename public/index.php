@@ -29,14 +29,16 @@
 <body>
 
 <div id="intro-wrapper">
-	<audio id="intro-audio"> <!-- autoplay -->
-	  <source src="media/audio/01.ogg" type="audio/ogg">
+	<audio id="intro-audio" autoplay>
+	<source src="media/audio/01.ogg" type="audio/ogg">
 	  <source src="media/audio/01.mp3" type="audio/mp3">
 	</audio>
 
 	<div id="intro">
 		<h1>AntonioRossi</h1>
 		<h2>Composer</h2>
+		
+		<?php include INC . 'menus/main.php'; ?>		
 	</div>
 	
 	<div id="skip-intro">
@@ -57,7 +59,7 @@
 			</a>
 		</h1>
 	
-		<?php include_once INC . 'menus/main.php'; ?>
+		<?php include INC . 'menus/main.php'; ?>
 		
 	</div>
 

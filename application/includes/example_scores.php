@@ -9,7 +9,7 @@ $scores = scandir($scores_path);
 
 <section id=scores class=clearfix>
 
-	<h3><?=$scores_title?></h3>
+	<h2><?=$scores_title?></h2>
 
 	<ul>
 	<?php
@@ -17,7 +17,7 @@ $scores = scandir($scores_path);
 		if ( is_file($scores_path.$score) ) {
 	?>
 		<li>
-			<a href="<?=$scores_path.$score?>"><?=str_replace('.pdf','',$score)?></a>
+			<a href="<?=$scores_path.$score?>" target="_blank"><?=str_replace('.pdf','',$score)?></a>
 		</li>
 	<?php
 		}

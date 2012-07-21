@@ -1,16 +1,3 @@
-<?php
-if (isset($_POST['submit'])) {
-
-	$header = "From: ".$_POST['name']." <".$_POST['email'].">";
-	
-	/* mail(to,subject,message,additional_headers,additional_parameters) */
-	if (!mail(MAIL_TO, $_POST['subject'], $_POST['message'], $header))
-		echo "<p style='color:#800'>Il messaggio non è stato inviato. Riprovare.</p>";
-	else
-		echo "<p style='color:green'>Il messaggio è stato recapitato correttamente.</p>";
-}
-?>
-
 <form id=contact-form method=POST action="<?=ROOT?>contatti">
 	
 	<fieldset><legend>Lascia un messaggio</legend>
@@ -34,6 +21,9 @@ if (isset($_POST['submit'])) {
 		
 		<input type="submit" name="submit" value="Invia">
 		
+		<div id="response"></div>
+		
 	</fieldset>
 	
 </form>
+

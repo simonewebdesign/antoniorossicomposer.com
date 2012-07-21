@@ -101,10 +101,11 @@ audio {
 		#intro h2 {
 			margin:0; padding:0;
 			margin-left:50px;
+			color:#fff;			
 		}
 
 		#intro h1 {
-			color:#fff;
+
 			text-shadow:0 0 3px #000;
 			font-size:6em;
 			margin-top:300px;
@@ -112,18 +113,22 @@ audio {
 
 		#intro h2 {
 			font-size:4em;
-			color:#ddd;
 			text-align:center;
-			margin-right:180px;
+			/*margin-right:180px;*/
+			/*display:block !important;*/
+			text-shadow:0 0 10px white;			
 		}
-
+		
 		#intro span,
 		#intro h2 {
 			display:none;
 		}
 		
-		#skip-intro {
+		#skip-intro {			
 			color:#ddd;
+			position:fixed;
+			bottom:20px;
+			right:20px;
 		}
 		#skip-intro:hover {
 			color:#fff;
@@ -150,7 +155,8 @@ audio {
 	z-index:1000;
 	border-top:5px solid black;
 	border-bottom:1px solid black;
-	background:url('../../img/textures/lefft_background.jpg');	
+	background:url('../../img/textures/lefft_background.jpg');
+	box-shadow:0 0 6px rgba(0,0,0,.3);
 }
 	#logo {
 		margin:0;
@@ -170,7 +176,7 @@ audio {
 */
 	}
 		#wrapper h2 {
-			text-shadow:0px 0px 4px #e8dac0;			
+			text-shadow:0px 0px 4px #faf7f2;			
 		}
 		#wrapper p {
 			text-shadow:0px 0px 2px #e8dac0;			
@@ -195,6 +201,10 @@ audio {
 		border-top:1px solid #000;
 		margin:50px;
 	}
+		#footer-content {
+			text-align:left;
+			font-size:.8em;
+		}
 	
 	/* section */
 	#contacts,
