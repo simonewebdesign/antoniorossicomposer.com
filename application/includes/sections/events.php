@@ -1,8 +1,6 @@
-<h2>Eventi</h2>
-
 <?php 
 
-$en_format_string = "%D %r";
+$en_format_string = "%D %M %Y, %h:%i %p";
 
 $format_string = $lang == 'it' ? DATE_FORMAT_DATETIME : $en_format_string;
 

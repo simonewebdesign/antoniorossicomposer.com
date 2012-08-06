@@ -37,8 +37,6 @@
 	<div id="intro">
 		<h1>AntonioRossi</h1>
 		<h2>Composer</h2>
-		
-		<?php include INC . 'menus/main.php'; ?>		
 	</div>
 	
 	<div id="skip-intro">
@@ -59,7 +57,22 @@
 			</a>
 		</h1>
 	
-		<?php include INC . 'menus/main.php'; ?>
+		<?php // MAIN MENU
+			echo "<ul class=clearfix>";
+
+			$menu = array_reverse($sections);
+			
+			foreach ( $menu as $en => $it ) {
+				
+				$menu_title = $lang == 'it' ? $it : $en; 
+				
+				echo "<li>";
+					echo '<a href="#' . $en . '"';
+					echo '>' . ucfirst($menu_title) . '</a>';
+				echo "</li>";
+			}
+			echo "</ul>";
+		?>
 		
 	</div>
 
@@ -68,34 +81,39 @@
 <div id=wrapper class=clearfix> <!-- 2 columns: main and aside -->
 
 	<div id=main role=main>
-	
 	<?php
-	
-	$pages = array_reverse($menu[$lang]);
-//	var_dump($pages);
-	$p_count = 1;
-	
-	foreach ($pages as $page) {
-		if ($page != 'eventi' && $page != 'events') {
-			echo "<section id=$page class=clearfix>";
-				include_once INC . 'pages/' . $lang . "/$p_count-$page.php";
+	foreach ($sections as $en => $it) {
+		if ($en != 'events') { // events section is excluded from main. Look on #aside.
+		
+			$section_title = $lang == 'it' ? $it : $en;
+			
+			echo "<section id=$en class=clearfix>";
+				echo "<h2>" . ucfirst($section_title) . "</h2>";
+				include_once INC . "sections/$en.php";
 			echo "</section>";
 		}
-		$p_count++;		
 	}
-	?>
-		
+	?>	
 	</div>
 
 	<div id=aside role=complementary>
-		<?php include_once INC . 'pages/' . $lang . '/aside.php'; ?>
+		<section id=scores class=clearfix>
+		<?php include INC . 'example_scores.php'; ?>
+		</section>
+		<hr>
+		<img class=noborder src="<?=ROOT?>img/cit-<?=$lang?>.png">
+		<hr>
+		<section id=events class=clearfix>
+			<h2><?=$lang == 'it' ? 'Eventi' : 'Events'?></h2>
+			<?php include INC . 'sections/events.php'; ?>
+		</section>
 	</div>
 
 </div>
 
 <div id=footer>
 	<div id=footer-content>
-	Web Design by <a href="http://playpc.it">Playpc.it</a>
+	Web Design by <a href="http://www.playpc.it">Playpc.it</a>
 	</div>
 </div>
 

@@ -1,5 +1,3 @@
-<h2>Ascolti</h2>
-
 <?php
 
 $tracks = $db->query("SELECT * FROM tracks");

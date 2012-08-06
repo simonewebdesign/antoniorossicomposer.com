@@ -91,14 +91,14 @@ function fadeInSuccessive(selector, t) {
     next();
 }
 
-
 /*
+
 isAppLoaded = null;
 
 function loadAudio(uri)
 {
     var audio = new Audio();
-    //audio.onload = isAppLoaded; // It doesn't works!
+    //audio.onload = isAppLoaded; // It doesn't work!
     audio.addEventListener('canplaythrough', isAppLoaded, false); // It works!!
     audio.src = uri;
     return audio;
@@ -159,24 +159,15 @@ $(document).ready(function(){
 	});
 */
 	$('#contact-form').on('submit', function() {
-/*		
-		$.ajax ({
-			// executing ajax request...
-			type:	'POST',
-			url:	 ROOT + 'ajax_send_mail.php',
-			context: $(this), // document.body,
-			data:	'url=' + $(this).attr('href'),
-			success: function( data ) {
-				
-			}
-		});
-*/
+
 		var name = $('#name').val();
 		var email = $('#email').val();
 		var subject = $('#subject').val();
 		var message = $('#message').val();
+		var recaptcha_challenge_field = $('#recaptcha_challenge_field').val();
+		var recaptcha_response_field = $('#recaptcha_response_field').val();
 
-		var request = {"name": name, "email": email, "subject": subject, "message": message}
+		var request = {"name": name, "email": email, "subject": subject, "message": message, "recaptcha_challenge_field": recaptcha_challenge_field, "recaptcha_response_field": recaptcha_response_field};
 		
 		$('#response').load( ROOT + 'ajax_send_mail.php', request ); //, function() { alert('callback!'); }
 		

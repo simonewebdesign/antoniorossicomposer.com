@@ -1,0 +1,1 @@
+<?php if ($lang == 'it') { ?> <p>Sezione in allestimento. I video saranno disponibili a breve.</p><?php } else { ?><p>Page under construction. Videos will be available soon.</p><?php } ?>

@@ -8,7 +8,7 @@ define('MAIL_REPLY_TO','test <info@.it>');
 
 //* Test email settings
 define('MAIL_FROM','Me <info@simonewebdesign.it>');
-define('MAIL_TO','Me <info@simonewebdesign.it>');
+define('MAIL_TO','Antonio Rossi Composer <antoniorossicomposer@gmail.com>');
 define('MAIL_REPLY_TO','Me <info@simonewebdesign.it>');
 //*/
 

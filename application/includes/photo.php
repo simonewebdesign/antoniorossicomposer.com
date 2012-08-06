@@ -1,1 +1,1 @@
-<a class="fancybox photo" rel="photos" href="<?=ROOT?>img/photos/<?=$photo?>">	<img class="lazy" src="<?=ROOT?>img/trans.gif" data-original="<?=ROOT?>img/photos/<?=$photo?>" width=200></a>
+<a class="fancybox photo" rel="photos" href="<?=ROOT.$photos_folder.$i.$photos_ext?>" title="<?=$photos_info[$i]['caption_'.$lang]?>">	<img class="lazy" src="<?=ROOT?>img/trans.gif" data-original="<?=ROOT.$photos_folder.$i.$photos_ext?>" width=200></a>

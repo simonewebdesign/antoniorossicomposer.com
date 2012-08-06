@@ -1,5 +1,3 @@
-<h2>Pubblicazioni</h2>
-
 <!--
 
 1 - DISSOLVENZE ATONALI per Quartetto di Saxofoni, Pianoforte e Sequenza Elettronica - PRENDINOTA EDIZIONI MUSICALI E. 482 P. (Prima edizione Maggio 2012)

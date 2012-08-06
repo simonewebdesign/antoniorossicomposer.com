@@ -39,10 +39,17 @@ $(window).scroll(function() { // biography fix when scrolling up
 	var HEADER_HEIGHT = parseInt($('#header').height()) + OFFSET;
 
 	$('a[href^=#]:not([href=#])').click(function(e){
-  		$('html, body').animate({ 
+  		$('html, body')
+			.animate({
                  scrollTop: $($(this).attr("href"))
-                 .offset().top - HEADER_HEIGHT }, 1000);
-
+                 .offset().top - HEADER_HEIGHT }, 1200)
+			.animate({
+                 scrollTop: $($(this).attr("href"))
+                 .offset().top - HEADER_HEIGHT - 20 }, 300)
+			.animate({
+                 scrollTop: $($(this).attr("href"))
+                 .offset().top - HEADER_HEIGHT }, 600);			 
+				 
    		 e.preventDefault();
  	});
 
