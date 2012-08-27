@@ -132,10 +132,27 @@ if ( loadAudio('media/audio/01.ogg') ) {
 //audio.addEventListener('loadedmetadata', loadedMetadataFunction, false);
 
 
+/******* BEGIN SKIP INTRO *********/
+function scrollToContent() {
+  console.log('intro skipped!');
+  $('html').animate({ scrollTop: $('#intro-wrapper').height() }, "slow");
+  
+}
+$('#skip-intro').on('click', function(){
 
-
-
-
+		if ( document.getElementById('intro-audio').paused == false ) {
+			document.getElementById('intro-audio').pause();
+//			alert('music paused');
+//		} else {
+//			$('#intro-audio').play();
+//			alert('music playing');
+		}	
+	
+		// $('#intro-wrapper').fadeOut('slow'); // tempo che ci mette il wrapper a scomparire	
+ 
+  scrollToContent(); 
+});
+/******* END SKIP INTRO **********/
 
 $(function(){
 
@@ -148,19 +165,7 @@ $(function(){
 	});
 */
 	
-	$('#skip-intro').on('click', function() {
-		
-		if ( document.getElementById('intro-audio').paused == false ) {
-			document.getElementById('intro-audio').pause();
-//			alert('music paused');
-//		} else {
-//			$('#intro-audio').play();
-//			alert('music playing');
-		}	
-	
-		// $('#intro-wrapper').fadeOut('slow'); // tempo che ci mette il wrapper a scomparire	
-	
-	});
+
 
 /*	
 	$('#navbar a').on('click', function() {
@@ -193,15 +198,4 @@ $(function(){
 	});
 
 
-});
-
-
-
-function scrollToContent() {
-  console.log('function executed');
-  $('html').animate({ scrollTop: $('#intro-wrapper').height() }, "slow");
-  
-}
-$('#skip-intro').on('click', function(){ 
-  scrollToContent(); 
 });

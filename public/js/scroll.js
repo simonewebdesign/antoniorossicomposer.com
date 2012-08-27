@@ -3,7 +3,7 @@
 
 
 
-$((function() { 
+$(function() { 
 
   $(window).scroll(function() { // biography fix when scrolling up
     console.log($('html').offset().top);
@@ -32,7 +32,7 @@ $((function() {
   //console.log($('html').offset().top);	
       
     }, {
-      offset: 160
+      offset: 0
     });
     
 
@@ -58,5 +58,13 @@ $((function() {
          e.preventDefault();
     });
   */
+
+  
+/*** STICKY HEADER BEGIN ***/
+	$('#header').waypoint( function(e, direction) {
+		$(this).toggleClass('sticky', direction === "down");
+		e.stopPropagation();
+	});
+/*** STICKY HEADER END ***/  
 
 });

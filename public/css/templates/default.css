@@ -174,13 +174,17 @@ hr {
 }*/
 
 
+.sticky {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+}
+
 #header {
-	/*position:fixed;
-	top:0;
-	width:100%;
 	height:120px;
 	line-height:120px;
-	z-index:1000;*/
+	z-index:1000;
 	border-top:5px solid black;
 	border-bottom:1px solid black;
 	background:url('../../img/textures/lefft_background.jpg');
