@@ -1,6 +1,8 @@
 html, body {
+/*
 	height:100%;
 	min-height:100%;
+*/
 	margin:0;
 	padding:0;
 }
@@ -10,10 +12,10 @@ html {
 }
 
 body {
-	overflow:hidden;
+	/*overflow:hidden;*/
 	color:#333;
 	text-align:center;
-	margin-top:120px; /*header's height*/
+	/*margin-top:120px;*/ /*header's height*/
 	font-family:'ApollineRegular';
 	font-size:1.1em;
 	
@@ -103,10 +105,10 @@ hr {
 	color:#eee;
 	text-align:center;
 	text-shadow:0 0 1px #000;
-	position:absolute;
-	top:0; left:0;
-	width:100%;
-	height:100%;
+	position:relative;
+	/*top:0; left:0;
+	width:100%;*/
+	height:1024px;
 	z-index:10001;
 }
 /*	#intro-audio {
@@ -118,21 +120,20 @@ hr {
 		font-family: 'BeforetheRainRegular';
 		width:1000px;
 		text-align:left;
-		margin:200px auto;
+		/*margin:200px auto;*/
 	}
 
 		#intro h1,
 		#intro h2 {
 			margin:0; padding:0;
-			margin-left:50px;
-			color:#fff;			
+			color:#fff;
 		}
 
 		#intro h1 {
 
 			text-shadow:0 0 3px #000;
 			font-size:6em;
-			margin-top:300px;
+			/*margin-top:300px;*/
 		}
 
 		#intro h2 {
@@ -150,9 +151,12 @@ hr {
 		
 		#skip-intro {			
 			color:#ddd;
-			position:fixed;
-			bottom:20px;
-			right:20px;
+      /*
+			position:absolute;
+			bottom:50px;
+			left:50%;
+      */
+      text-align:center;
 		}
 		#skip-intro:hover {
 			color:#fff;
@@ -171,12 +175,12 @@ hr {
 
 
 #header {
-	position:fixed;
+	/*position:fixed;
 	top:0;
 	width:100%;
 	height:120px;
 	line-height:120px;
-	z-index:1000;
+	z-index:1000;*/
 	border-top:5px solid black;
 	border-bottom:1px solid black;
 	background:url('../../img/textures/lefft_background.jpg');

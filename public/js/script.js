@@ -1,6 +1,8 @@
 
 //function startIntro() {
-	/*** intro execution ***/
+
+
+	/*** begin intro execution ***/
 
 	var text = $('#intro h1').html().split('');
 
@@ -23,6 +25,12 @@
 		$('body').css('overflow', 'visible');
 	}, 45000); // durata della canzone
 
+  /* end intro execution */
+  
+  
+  
+  
+  /*
 	$('#intro ul').css({
 		'height':'100px',
 		'margin-top':'50px',
@@ -41,7 +49,9 @@
 		'height':'100px',
 		'margin-top':'50px'
 	});
-	
+	*/
+  
+  
 //	setTimeout( function() {
 //		$('#intro ul li:nth-child(1)').fadeIn(1000);
 //	}, 3000);
@@ -111,6 +121,8 @@ if ( loadAudio('media/audio/01.ogg') ) {
 }
 */
 
+
+
 //var isAppLoaded = false;
 //document.getElementById('intro-audio').addEventListener('canplaythrough', isAppLoaded, false);
 //alert(isAppLoaded);
@@ -125,7 +137,7 @@ if ( loadAudio('media/audio/01.ogg') ) {
 
 
 
-$(document).ready(function(){
+$(function(){
 
 
 /* floating background
@@ -158,7 +170,13 @@ $(document).ready(function(){
 		$(this).addClass('current');
 	});
 */
-	$('#contact-form').on('submit', function() {
+
+
+/******************************************
+*************** CONTACT FORM **************
+******************************************/
+
+	$('#contact-form').on('submit', function(e) {
 
 		var name = $('#name').val();
 		var email = $('#email').val();
@@ -171,7 +189,9 @@ $(document).ready(function(){
 		
 		$('#response').load( ROOT + 'ajax_send_mail.php', request ); //, function() { alert('callback!'); }
 		
-		return false;
+		e.preventDefault();
+    
 	});
+
 
 });

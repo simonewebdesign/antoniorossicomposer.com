@@ -32,7 +32,7 @@ $(window).scroll(function() { // biography fix when scrolling up
 	
 
 
-
+/*
 	$(document).scrollTop(0); // quick reset in case user refreshes the page
 	
 	var OFFSET = 30;
@@ -52,6 +52,6 @@ $(window).scroll(function() { // biography fix when scrolling up
 				 
    		 e.preventDefault();
  	});
-
+*/
 
 });

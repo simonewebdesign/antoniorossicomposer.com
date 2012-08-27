@@ -302,7 +302,7 @@ FileETag None
 <IfModule mod_rewrite.c>
 #  Options +FollowSymlinks
   RewriteEngine On
-# RewriteBase /
+  RewriteBase /
 
 	RewriteRule ^([^/\.]+)/?$ 					index.php?p1=$1
 	RewriteRule ^([^/\.]+)/([^/\.]+)/?$ 		index.php?p1=$1&p2=$2

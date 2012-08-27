@@ -21,17 +21,17 @@
   <meta name="viewport" content="width=device-width; "> <!-- user-scalable=0 -->
   <link rel="icon" type="image/png" href="<?=ROOT?>favicon.png">
   <?=$css?>
-  <link rel="stylesheet" href="fonts/before-the-rain.css">
-  <link rel="stylesheet" href="fonts/apolline.css">
-  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <link rel="stylesheet" href="<?=ROOT?>fonts/before-the-rain.css">
+  <link rel="stylesheet" href="<?=ROOT?>fonts/apolline.css">
+  <script src="<?=ROOT?>js/libs/modernizr.custom.min.js"></script>
   
 </head>
 <body>
 
 <div id="intro-wrapper">
 	<audio id="intro-audio" autoplay>
-	<source src="media/audio/01.ogg" type="audio/ogg">
-	  <source src="media/audio/01.mp3" type="audio/mp3">
+	<source src="<?=ROOT?>media/audio/01.ogg" type="audio/ogg">
+	  <source src="<?=ROOT?>media/audio/01.mp3" type="audio/mp3">
 	</audio>
 
 	<div id="intro">
@@ -130,7 +130,7 @@
 
   <!-- End of Content /// JavaScript Begin --->
 
-<!--  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+  <!--  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script> 
   
   <script>
