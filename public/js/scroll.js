@@ -1,12 +1,9 @@
-
-
-
-
-
 $(function() { 
 
-  $(window).scroll(function() { // biography fix when scrolling up
-    console.log($('html').offset().top);
+
+  $(window).scroll(function() { 
+    // biography fix when scrolling up
+    //debug: console.log($('html').offset().top);
     if ( $('html').offset().top == 0 ) {
       $('#navbar').find('.current').removeClass('current');
       $('#navbar ul li a[href^="#bio"]').addClass('current');
@@ -65,6 +62,6 @@ $(function() {
 		$(this).toggleClass('sticky', direction === "down");
 		e.stopPropagation();
 	});
-  /*** STICKY HEADER END ***/  
+  /*** STICKY HEADER END ***/
 
 });

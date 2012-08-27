@@ -28,12 +28,12 @@
 <body>
 
 <div id="intro-wrapper">
-
-	<audio id="intro-audio" autoplay>
 <!--
+	<audio id="intro-audio" autoplay>
+
     <source src="<?=ROOT?>media/audio/01.ogg" type="audio/ogg">
 	  <source src="<?=ROOT?>media/audio/01.mp3" type="audio/mp3">
--->
+
     <?php if ($lang == 'it') { ?>
     
       <p>Il tuo web browser non supporta alcune delle tecnologie usate all'interno di questo sito.<br>
@@ -47,7 +47,7 @@
     <?php } ?>
   
 	</audio>
-
+-->
 	<div id="intro">
 		<h1>AntonioRossi</h1>
 		<h2>Composer</h2>
