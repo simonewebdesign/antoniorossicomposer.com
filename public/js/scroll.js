@@ -1,6 +1,6 @@
 $(function() { 
 
-
+/*
   $(window).scroll(function() { 
     // biography fix when scrolling up
     //debug: console.log($('html').offset().top);
@@ -9,7 +9,7 @@ $(function() {
       $('#navbar ul li a[href^="#bio"]').addClass('current');
     }
   });
-
+*/
 
   //	var gOffset = 0;
 
@@ -21,21 +21,10 @@ $(function() {
       $('#navbar').find('.current').removeClass('current');		
       $('#navbar ul li a[href="#'+id+'"]').addClass('current');
       
-  //		console.log('id: '+$(this).attr('id')+', direction: '+direction);			
-  //		gOffset = direction === 'down' ? 160 : 0;
-  //		$.waypoints('refresh');
-      
-  //		console.log(gOffset);
-  //console.log($('html').offset().top);	
-      
     }, {
       offset: 0
     });
-    
 
-
-  /*
-    $(document).scrollTop(0); // quick reset in case user refreshes the page
     
     var OFFSET = 30;
     var HEADER_HEIGHT = parseInt($('#header').height()) + OFFSET;
@@ -51,10 +40,9 @@ $(function() {
         .animate({
                    scrollTop: $($(this).attr("href"))
                    .offset().top - HEADER_HEIGHT }, 600);			 
-           
+
          e.preventDefault();
     });
-  */
 
   
   /*** STICKY HEADER BEGIN ***/
