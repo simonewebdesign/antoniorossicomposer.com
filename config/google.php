@@ -1,2 +1,1 @@
-<?php
-define('ANALYTICS_CODE', 'UA-XXX-X');
+<?php define('ANALYTICS_CODE', 'UA-33915377-1');

@@ -38,6 +38,10 @@ ehthumbs.db
 Thumbs.db
 
 # Folders #
-#########
+###########
 MATERIALE
 OLD
+
+# Configuration files #
+#######################
+config/database.php

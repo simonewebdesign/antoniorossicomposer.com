@@ -169,28 +169,6 @@ AddType text/x-vcard                        vcf
     </IfModule>
   </IfModule>
 
-  # HTML, TXT, CSS, JavaScript, JSON, XML, HTC:
-  <IfModule filter_module>
-    FilterDeclare   COMPRESS
-    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/html
-    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/css
-    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/plain
-    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/xml
-    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/x-component
-    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/javascript
-    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/json
-    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/xml
-    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/xhtml+xml
-    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/rss+xml
-    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/atom+xml
-    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/vnd.ms-fontobject
-    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $image/svg+xml
-    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $image/x-icon
-    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $application/x-font-ttf
-    FilterProvider  COMPRESS  DEFLATE resp=Content-Type $font/opentype
-    FilterChain     COMPRESS
-    FilterProtocol  COMPRESS  DEFLATE change=yes;byteranges=no
-  </IfModule>
 
   <IfModule !mod_filter.c>
     # Legacy versions of Apache
@@ -202,7 +180,6 @@ AddType text/x-vcard                        vcf
   </IfModule>
 
 </IfModule>
-
 
 # ----------------------------------------------------------------------
 # Expires headers (for better cache control)
@@ -325,16 +302,10 @@ FileETag None
 <IfModule mod_rewrite.c>
 #  Options +FollowSymlinks
   RewriteEngine On
-#  RewriteBase /
+  RewriteBase /
 
-	RewriteRule ^([^/\.]+)/?$ 																		index.php?p1=$1
-	RewriteRule ^([^/\.]+)/([^/\.]+)/?$ 															index.php?p1=$1&p2=$2
-	RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ 													index.php?p1=$1&p2=$2&p3=$3
-	RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ 										index.php?p1=$1&p2=$2&p3=$3&p4=$4
-	RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ 								index.php?p1=$1&p2=$2&p3=$3&p4=$4&p5=$5
-	RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ 					index.php?p1=$1&p2=$2&p3=$3&p4=$4&p5=$5&p6=$6
-	RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ 			index.php?p1=$1&p2=$2&p3=$3&p4=$4&p5=$5&p6=$6&p7=$7
-	RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ index.php?p1=$1&p2=$2&p3=$3&p4=$4&p5=$5&p6=$6&p7=$7&p8=$8
+	RewriteRule ^([^/\.]+)/?$ 					index.php?p1=$1
+	RewriteRule ^([^/\.]+)/([^/\.]+)/?$ 		index.php?p1=$1&p2=$2
   
   
 </IfModule>
@@ -361,11 +332,11 @@ FileETag None
 # Option 1:
 # Rewrite "www.example.com -> example.com"
 
-<IfModule mod_rewrite.c>
-  RewriteCond %{HTTPS} !=on
-  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-  RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
-</IfModule>
+#<IfModule mod_rewrite.c>
+#  RewriteCond %{HTTPS} !=on
+#  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+#  RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+#</IfModule>
 
 # ----------------------------------------------------------------------
 

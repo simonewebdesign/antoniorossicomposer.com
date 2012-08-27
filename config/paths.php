@@ -1,11 +1,11 @@
 <?php
 
-/*** PRODUCTION main paths ***
+//*** PRODUCTION main paths ***
 define('ROOT', 			'/');
-define('ABSOLUTE_ROOT', 'http://antoniorossicomposer.com/');
+define('ABSOLUTE_ROOT', 'http://www.antoniorossicomposer.com/');
 //*/
 
-//*** LOCALHOST main paths ***
+/*** LOCALHOST main paths ***
 define('ROOT', 			'/antoniorossicomposer.com/');
 define('ABSOLUTE_ROOT', 'http://localhost/antoniorossicomposer.com/');
 //*/

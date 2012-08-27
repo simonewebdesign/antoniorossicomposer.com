@@ -15,4 +15,4 @@ define('MAIL_REPLY_TO','Me <info@simonewebdesign.it>');
 define('MAIL_HEADER_HTML', 	'From: ' . MAIL_FROM . '\r\n' . 
 							'Reply-To: ' . MAIL_REPLY_TO . '\r\n' .
 							'MIME-Version: 1.0' . '\r\n' .
-							'Content-Type: text/html; charset=UTF-8' . '\r\n');
+							'Content-Type: text/html; charset=UTF8' . '\r\n');
