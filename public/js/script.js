@@ -196,6 +196,21 @@ $(function(){
 		e.preventDefault();
     
 	});
-
-
+  
 });
+
+
+
+/**********************
+******** AUDIO ********
+**********************/
+
+if (Modernizr.audio) {
+//  console.log('audio supported');
+}else{
+//  console.log('audio NOT supported');
+}
+
+//document.getElementById('intro-audio').src = Modernizr.audio.ogg ? ROOT + 'media/audio/01.ogg' :
+//                                             Modernizr.audio.mp3 ? ROOT + 'media/audio/01.mp3';
+

@@ -29,9 +29,19 @@
 <body>
 
 <div id="intro-wrapper">
+
 	<audio id="intro-audio" autoplay>
-	<source src="<?=ROOT?>media/audio/01.ogg" type="audio/ogg">
+  <!--
+    <source src="<?=ROOT?>media/audio/01.ogg" type="audio/ogg">
 	  <source src="<?=ROOT?>media/audio/01.mp3" type="audio/mp3">
+  -->
+  <?php if ($lang == 'it') { ?>
+    <p>Il tuo web browser non supporta alcune delle tecnologie usate all'interno di questo sito.<br>
+    Per una migliore esperienza di navigazione, ti consigliamo di scaricare gratuitamente <a style="color:orange" href="http://mozilla.org/firefox">Mozilla Firefox</a>.</p>
+  <?php } else { ?>
+    <p>Your web browser doesn't support some of the technologies used in this site.<br>
+    For a better navigation experience, we invite you to download <a style="color:orange" href="http://mozilla.org/firefox">Mozilla Firefox</a>. It's free.</p>
+  <?php } ?>
 	</audio>
 
 	<div id="intro">

@@ -60,11 +60,11 @@ $(function() {
   */
 
   
-/*** STICKY HEADER BEGIN ***/
+  /*** STICKY HEADER BEGIN ***/
 	$('#header').waypoint( function(e, direction) {
 		$(this).toggleClass('sticky', direction === "down");
 		e.stopPropagation();
 	});
-/*** STICKY HEADER END ***/  
+  /*** STICKY HEADER END ***/  
 
 });
