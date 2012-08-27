@@ -158,9 +158,8 @@ $(function(){
 //			alert('music playing');
 		}	
 	
-		$('#intro-wrapper').fadeOut('slow'); // tempo che ci mette il wrapper a scomparire	
-		$('body').css('overflow', 'visible');
-		
+		// $('#intro-wrapper').fadeOut('slow'); // tempo che ci mette il wrapper a scomparire	
+	
 	});
 
 /*	
@@ -194,4 +193,15 @@ $(function(){
 	});
 
 
+});
+
+
+
+function scrollToContent() {
+  console.log('function executed');
+  $('html').animate({ scrollTop: $('#intro-wrapper').height() }, "slow");
+  
+}
+$('#skip-intro').on('click', function(){ 
+  scrollToContent(); 
 });
