@@ -1,1 +1,0 @@
-SET collation_connection = utf8_general_ci; SET NAMES utf8;

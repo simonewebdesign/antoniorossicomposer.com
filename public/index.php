@@ -24,24 +24,28 @@
   <link rel="stylesheet" href="<?=ROOT?>fonts/before-the-rain.css">
   <link rel="stylesheet" href="<?=ROOT?>fonts/apolline.css">
   <script src="<?=ROOT?>js/libs/modernizr.custom.min.js"></script>
-  
 </head>
 <body>
 
 <div id="intro-wrapper">
 
 	<audio id="intro-audio" autoplay>
-  <!--
+<!--
     <source src="<?=ROOT?>media/audio/01.ogg" type="audio/ogg">
 	  <source src="<?=ROOT?>media/audio/01.mp3" type="audio/mp3">
-  -->
-  <?php if ($lang == 'it') { ?>
-    <p>Il tuo web browser non supporta alcune delle tecnologie usate all'interno di questo sito.<br>
-    Per una migliore esperienza di navigazione, ti consigliamo di scaricare gratuitamente <a style="color:orange" href="http://mozilla.org/firefox">Mozilla Firefox</a>.</p>
-  <?php } else { ?>
-    <p>Your web browser doesn't support some of the technologies used in this site.<br>
-    For a better navigation experience, we invite you to download <a style="color:orange" href="http://mozilla.org/firefox">Mozilla Firefox</a>. It's free.</p>
-  <?php } ?>
+-->
+    <?php if ($lang == 'it') { ?>
+    
+      <p>Il tuo web browser non supporta alcune delle tecnologie usate all'interno di questo sito.<br>
+      Per una migliore esperienza di navigazione, ti consigliamo di scaricare gratuitamente <a style="color:orange" href="http://mozilla.org/firefox">Mozilla Firefox</a>.</p>
+      
+    <?php } else { ?>
+    
+      <p>Your web browser doesn't support some of the technologies used in this site.<br>
+      For a better navigation experience, we invite you to download <a style="color:orange" href="http://mozilla.org/firefox">Mozilla Firefox</a>. It's free.</p>
+      
+    <?php } ?>
+  
 	</audio>
 
 	<div id="intro">
@@ -92,16 +96,17 @@
 
 	<div id=main role=main>
 	<?php
+  
+  unset($sections['events']); // events section is excluded from main. It's hardcoded on #aside.
+  
 	foreach ($sections as $en => $it) {
-		if ($en != 'events') { // events section is excluded from main. Look on #aside.
-		
-			$section_title = $lang == 'it' ? $it : $en;
-			
-			echo "<section id=$en class=clearfix>";
-				echo "<h2>" . ucfirst($section_title) . "</h2>";
-				include_once INC . "sections/$en.php";
-			echo "</section>";
-		}
+    // printing sections    
+    $section_title = $lang == 'it' ? $it : $en;
+    
+    echo "<section id=$en class=clearfix>";
+      echo "<h2>" . ucfirst($section_title) . "</h2>";
+      include_once INC . "sections/$en.php";
+    echo "</section>";
 	}
 	?>	
 	</div>

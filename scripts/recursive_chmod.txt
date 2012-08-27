@@ -1,4 +1,0 @@
-# for files
-find <dirname> -type f -print0 | xargs -0 chmod -v 664
-#for folders
-find <dirname> -type d -print0 | xargs -0 chmod -v 775
