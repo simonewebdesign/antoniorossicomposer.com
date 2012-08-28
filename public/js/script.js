@@ -33,18 +33,31 @@ if (Modernizr.audio) {
   console.log('Audio supported!');
 
   var audio = document.createElement("audio");
+  console.log(audio);
   
   if (Modernizr.audio.ogg) {
-    audio.src = 'media/audio/01.ogg';
+    console.log('ogg format is supported!');
+    audio.src = ROOT + 'media/audio/01.ogg';
   } else 
   if (Modernizr.audio.mp3) {
-    audio.src = 'media/audio/01.mp3';
+    console.log('mp3 format is supported!');
+    audio.src = ROOT + 'media/audio/01.mp3';
+  } else {
+    console.log('ogg and mp3 are not supported.');
   }
-
-  audio.addEventListener("canplaythrough", function() {
-    console.log('The file is loaded and ready to play!');
-    audio.play();
+  
+  audio.preload = 'auto';
+  
+  var fired = false;
+  
+  audio.addEventListener("canplaythrough", function(){
     
+    if (!fired) {
+      console.log('The "canplaythrough" event has been fired!');
+      audio.play();
+      console.log('Audio is now playing!');
+      fired = true;
+    }
     // intro must play here.
     /*
     $.getScript("js/intro.js", function(data, textStatus, jqxhr) {
@@ -56,6 +69,12 @@ if (Modernizr.audio) {
     */
   }, false);
 
+  /*
+  audio.removeEventListener("canplaythrough", function(){ 
+    console.log('EventListener canplaythrough has been removed.');
+  }, false);
+  */
+  
 }else{
   console.log('audio NOT supported');
 }

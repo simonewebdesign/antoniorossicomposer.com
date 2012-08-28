@@ -145,8 +145,7 @@
 
   <!-- End of Content /// JavaScript Begin --->
 
-  <!--  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script> 
+  <script src="<?=ROOT?>js/libs/jquery-1.8.0.js"></script> <!-- TODO load a minified version --> 
   
   <script>
 	var ROOT = '<?=ROOT?>';
