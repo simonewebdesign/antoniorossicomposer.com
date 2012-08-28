@@ -11,7 +11,7 @@ $form['it']['message']		= 'Messaggio';
 $form['en']['message']		= 'Message';
 $form['it']['submit']		= 'Invia';
 $form['en']['submit']		= 'Submit';
-$form['it']['subject_placeholder'] = 'Ciao!';
+$form['it']['subject_placeholder'] = 'Saluti';
 $form['en']['subject_placeholder'] = 'Hello!';
 ?>
 

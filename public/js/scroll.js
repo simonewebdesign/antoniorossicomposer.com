@@ -1,3 +1,11 @@
+function setCurrentSectionMenu(section) {
+  var id = section.attr('id');
+  //console.log('id: '+$(this).attr('id')+', direction: '+direction);	
+  $('#navbar').find('.current').removeClass('current');		
+  $('#navbar ul li a[href="#'+id+'"]').addClass('current');
+}
+
+
 $(function() { 
 
 /*
@@ -15,39 +23,36 @@ $(function() {
 
 
     $('section').waypoint(function(event, direction) {
-
-      var id = $(this).attr('id');
-      //console.log('id: '+$(this).attr('id')+', direction: '+direction);	
-      $('#navbar').find('.current').removeClass('current');		
-      $('#navbar ul li a[href="#'+id+'"]').addClass('current');
-      
+      setCurrentSectionMenu( $(this) );
     }, {
       offset: 0
     });
 
     
-    var OFFSET = 30;
-    var HEADER_HEIGHT = parseInt($('#header').height()) + OFFSET;
+//    var OFFSET = 30;
+//    var HEADER_HEIGHT = parseInt($('#header').height()) + OFFSET;
+
+
+    var OFFSET = 10;
 
     $('a[href^=#]:not([href=#])').click(function(e){
-        $('html, body')
-        .animate({
-                   scrollTop: $($(this).attr("href"))
-                   .offset().top - HEADER_HEIGHT }, 1200)
-        .animate({
-                   scrollTop: $($(this).attr("href"))
-                   .offset().top - HEADER_HEIGHT - 20 }, 300)
-        .animate({
-                   scrollTop: $($(this).attr("href"))
-                   .offset().top - HEADER_HEIGHT }, 600);			 
-
-         e.preventDefault();
+      
+      var href = $(this).attr("href");
+      var yPos = $(href).offset().top;
+    
+      $('html, body')
+      .animate({ scrollTop: yPos + OFFSET }, 1000);
+       e.preventDefault();
+      
+      setCurrentSectionMenu( $(href) );
+      
     });
 
   
   /*** STICKY HEADER BEGIN ***/
 	$('#header').waypoint( function(e, direction) {
 		$(this).toggleClass('sticky', direction === "down");
+    $('#biography, #scores').toggleClass('marginTop', direction === "down");
 		e.stopPropagation();
 	});
   /*** STICKY HEADER END ***/

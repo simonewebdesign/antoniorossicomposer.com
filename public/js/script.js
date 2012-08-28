@@ -1,5 +1,6 @@
 
 
+
 /******************************************
 *************** CONTACT FORM **************
 ******************************************/
@@ -58,15 +59,14 @@ if (Modernizr.audio) {
       console.log('Audio is now playing!');
       fired = true;
     }
-    // intro must play here.
-    /*
+    // intro animation starts here
     $.getScript("js/intro.js", function(data, textStatus, jqxhr) {
       console.log('Intro external JS file loaded!');
-      console.log(data); //data returned
-      console.log(textStatus); //success
-      console.log(jqxhr.status); //200
+ //     console.log(data); //data returned
+ //     console.log(textStatus); //success
+ //     console.log(jqxhr.status); //200
     });
-    */
+
   }, false);
 
   /*

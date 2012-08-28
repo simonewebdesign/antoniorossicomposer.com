@@ -49,12 +49,12 @@
 	</audio>
 -->
 	<div id="intro">
-		<h1>AntonioRossi</h1>
+		<h1><span>A</span><span>n</span><span>t</span><span>o</span><span>n</span><span>i</span><span>o</span><span>R</span><span>o</span><span>s</span><span>s</span><span>i</span></h1>
 		<h2>Composer</h2>
 	</div>
 	
 	<div id="skip-intro">
-	Skip Intro &raquo;
+	<?=$lang == 'it' ? 'Salta' : 'Skip'?> Intro <br>↓
 	</div>
 </div>
 
@@ -145,7 +145,7 @@
 
   <!-- End of Content /// JavaScript Begin --->
 
-  <script src="<?=ROOT?>js/libs/jquery-1.8.0.js"></script> <!-- TODO load a minified version --> 
+  <script src="<?=ROOT?>js/libs/jquery-1.8.0.min.js"></script>
   
   <script>
 	var ROOT = '<?=ROOT?>';

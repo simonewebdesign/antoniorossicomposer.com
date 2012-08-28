@@ -11,8 +11,9 @@ function fadeInSuccessive(selector, t) {
     next();
 }
 
-
 /*** BEGIN INTRO EXECUTION ***/
+
+/*
 var text = $('#intro h1').html().split('');
 
 $('#intro h1').html('');
@@ -22,6 +23,7 @@ for(i in text) {
   $('#intro h1').append('<span>' + text[i] + '</span>'); // style="z-index:'+zindex+';"
 //	zindex++;
 }
+*/
 
 fadeInSuccessive("#intro span", 2900); // 36 secondi fino al suono metallico / (diviso) 12 lettere
 
