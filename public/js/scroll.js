@@ -57,4 +57,16 @@ $(function() {
 	});
   /*** STICKY HEADER END ***/
 
+  $('.top').addClass('topHidden');
+	$.waypoints.settings.scrollThrottle = 30;
+	$('#wrapper').waypoint(function(event, direction) {
+		$('.top').toggleClass('topHidden', direction === "up");
+	}, {
+		offset: '-100%'
+	});
+  
+  $('.top').on('click', function(){
+    scrollToContent();
+  });
+  
 });

@@ -28,26 +28,7 @@
 <body>
 
 <div id="intro-wrapper">
-<!--
-	<audio id="intro-audio" autoplay>
 
-    <source src="<?=ROOT?>media/audio/01.ogg" type="audio/ogg">
-	  <source src="<?=ROOT?>media/audio/01.mp3" type="audio/mp3">
-
-    <?php if ($lang == 'it') { ?>
-    
-      <p>Il tuo web browser non supporta alcune delle tecnologie usate all'interno di questo sito.<br>
-      Per una migliore esperienza di navigazione, ti consigliamo di scaricare gratuitamente <a style="color:orange" href="http://mozilla.org/firefox">Mozilla Firefox</a>.</p>
-      
-    <?php } else { ?>
-    
-      <p>Your web browser doesn't support some of the technologies used in this site.<br>
-      For a better navigation experience, we invite you to download <a style="color:orange" href="http://mozilla.org/firefox">Mozilla Firefox</a>. It's free.</p>
-      
-    <?php } ?>
-  
-	</audio>
--->
 	<div id="intro">
 		<h1><span>A</span><span>n</span><span>t</span><span>o</span><span>n</span><span>i</span><span>o</span><span>R</span><span>o</span><span>s</span><span>s</span><span>i</span></h1>
 		<h2>Composer</h2>
@@ -128,6 +109,14 @@
 
 <div id=footer>
 	<div id=footer-content>
+  
+  	<nav>
+			<ul>
+				<li><a class="top" title="Back to top">Top</a></li>
+			</ul>
+		</nav>
+  
+  
 	Web Design by <a href="http://www.playpc.it">Playpc.it</a>
 	</div>
 </div>
@@ -188,6 +177,38 @@
   <script src="<?=ROOT?>plugins/waypoints/waypoints.min.js"></script>
   <script src="<?=ROOT?>js/scroll.js"></script>
 
+  <!-- up the volume -->
+  <script>
+  $(function(){
+  
+    var lang = '<?=$lang?>';
+  
+    if (Modernizr.audio) {
+      // HTML5 audio supported
+      if (lang == 'en') {
+        $('#intro-wrapper').append('<p class="up-volume">Up the volume...</p>');
+      } else {
+        $('#intro-wrapper').append('<p class="up-volume">Alza il volume...</p>');
+      }
+      // fare l'animazione $('.up-volume') che va su e opacity va a 0.
+      setTimeout( function(){
+        $('.up-volume').animate({
+          opacity: 0,
+          bottom: '50px'
+        }, 3000);
+      }, 2000);
+    } else {
+      // HTML5 audio not supported
+      if (lang == 'en') {
+        $('#intro-wrapper').append('<p>Your web browser doesn\'t support some of the technologies used in this site.<br>For a better navigation experience, we invite you to download <a style="color:orange" href="http://mozilla.org/firefox">Mozilla Firefox</a>. It\'s free.</p>');
+      } else {
+        $('#intro-wrapper').append('<p>Il tuo web browser non supporta alcune delle tecnologie usate all\'interno di questo sito.<br>Per una migliore esperienza di navigazione, ti consigliamo di scaricare gratuitamente <a style="color:orange" href="http://mozilla.org/firefox">Mozilla Firefox.</a>');
+      }
+    
+    }
+  });
+  </script>
+  
   <script>
     var _gaq=[['_setAccount','<?=ANALYTICS_CODE?>'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

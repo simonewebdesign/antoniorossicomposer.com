@@ -55,7 +55,7 @@ if (Modernizr.audio) {
     
     if (!fired) {
       console.log('The "canplaythrough" event has been fired!');
-      audio.play();
+ //     audio.play();
       console.log('Audio is now playing!');
       fired = true;
     }

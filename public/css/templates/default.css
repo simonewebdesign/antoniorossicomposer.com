@@ -81,6 +81,7 @@ hr {
 #intro-wrapper {
 	background-color:#111;
 	background-image:url('../../img/textures/noise-333.png');
+  
 	color:#eee;
 	text-align:center;
 	text-shadow:0 0 1px #000;
@@ -303,6 +304,10 @@ section:nth-child(8) {
 .upgrade-browser {
 	font-weight:bold;
 }
+.up-volume {
+  position:relative;
+}
+
 
 #recaptcha_widget_div {
 	opacity:.5;
@@ -313,6 +318,64 @@ section:nth-child(8) {
 #recaptcha_area {
 	margin:0 auto;
 }
+
+
+/* go to top (stolen from http://imakewebthings.com/jquery-waypoints/sticky-elements/) */
+.top {
+	position:fixed;
+	right:90px;
+	bottom:15px;
+	width:50px;
+	height:25px;
+	padding-top:25px;
+	line-height:25px;
+	background:#333;
+	color:#888;
+	display:block;
+	text-transform:uppercase;
+	text-decoration:none;
+	text-align:center;
+	font-size:14px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	behavior:url(../PIE.htc);
+  
+	opacity:1;
+	-webkit-transition:opacity .8s;
+	-moz-transition:opacity .8s;
+	ms-transition:opacity .8s;
+	-o-transition:opacity .8s;
+	transition:opacity .8s;
+}
+
+.top:before {
+	position:absolute;
+	top:11px;
+	left:14px;
+	content:"";
+	border-bottom:11px solid #888;
+	border-left:11px solid transparent;
+	border-right:11px solid transparent;
+}
+
+.top:hover {
+	color:#eee;
+}
+
+.top:hover:before {
+	border-bottom-color:#eee;
+}
+
+
+.top.topHidden {
+	opacity:0;
+}
+/*
+.top.hidden {
+	display:none;
+}*/
+
 
 /* special */
 ::-moz-selection {background:#555555;}
