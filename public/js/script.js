@@ -31,20 +31,20 @@ $(function(){
 **********************/
 
 if (Modernizr.audio) {
-  console.log('Audio supported!');
+  //console.log('Audio supported!');
 
   var audio = document.createElement("audio");
   console.log(audio);
   
   if (Modernizr.audio.ogg) {
-    console.log('ogg format is supported!');
+  //  console.log('ogg format is supported!');
     audio.src = ROOT + 'media/audio/01.ogg';
   } else 
   if (Modernizr.audio.mp3) {
-    console.log('mp3 format is supported!');
+  //  console.log('mp3 format is supported!');
     audio.src = ROOT + 'media/audio/01.mp3';
   } else {
-    console.log('ogg and mp3 are not supported.');
+  //  console.log('ogg and mp3 are not supported.');
   }
   
   audio.preload = 'auto';
@@ -54,14 +54,14 @@ if (Modernizr.audio) {
   audio.addEventListener("canplaythrough", function(){
     
     if (!fired) {
-      console.log('The "canplaythrough" event has been fired!');
- //     audio.play();
-      console.log('Audio is now playing!');
+    //  console.log('The "canplaythrough" event has been fired!');
+      audio.play();
+    //  console.log('Audio is now playing!');
       fired = true;
     }
     // intro animation starts here
     $.getScript("js/intro.js", function(data, textStatus, jqxhr) {
-      console.log('Intro external JS file loaded!');
+ //     console.log('Intro external JS file loaded!');
  //     console.log(data); //data returned
  //     console.log(textStatus); //success
  //     console.log(jqxhr.status); //200
@@ -76,14 +76,14 @@ if (Modernizr.audio) {
   */
   
 }else{
-  console.log('audio NOT supported');
+//  console.log('audio NOT supported');
 }
 
 
 
 /******* BEGIN SKIP INTRO *********/
 function scrollToContent() {
-  console.log('Intro has been skipped or finished.');
+//  console.log('Intro has been skipped or finished.');
   $('html').animate({ scrollTop: $('#intro-wrapper').height() }, "slow");
 }
 
