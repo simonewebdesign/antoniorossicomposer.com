@@ -5,9 +5,9 @@
 		<source src="<?=ROOT?>media/audio/<?=$track->id?>.<?=$ext?>" itemprop=audio>-
 	<?php } ?>
 	<?php if ($lang == 'en') { ?>
-		<small>Your Web Browser doesn't support the HTML5 &lt;audio&gt; element. Please <a href="http://www.mozilla.org/firefox" class="upgrade-browser">upgrade it NOW</a>!</small>
+		<small>Your web browser doesn't support audio. Please <a href="http://www.mozilla.org/firefox" class="upgrade-browser">download Firefox</a> for free.</small>
 	<?php } else { ?>
-		<small>Il tuo Web Browser non supporta l'elemento HTML5 &lt;audio&gt;. <a href="http://www.mozilla.org/firefox" class="upgrade-browser">Aggiorna ORA il tuo Browser</a>!</small>
+		<small>Il tuo browser web non supporta l'audio. <a href="http://www.mozilla.org/firefox" class="upgrade-browser">Scarica Firefox</a> gratuitamente.</small>
 	<?php } ?>
 	</audio>
 </div>
