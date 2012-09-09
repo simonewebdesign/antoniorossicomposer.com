@@ -18,7 +18,7 @@
   <meta name="keywords"	content="<?=$meta[$lang]['keywords']?>">
   <meta name="author" content="<?=$settings['site']['author']?>">
   <meta name="robots" content="<?=($template['name'] == 'backoffice') ? 'noindex,nofollow' : 'index,follow'?>">
-  <meta name="viewport" content="width=device-width; "> <!-- user-scalable=0 -->
+  <meta name="viewport" content="width=device-width"> <!-- user-scalable=0 -->
   <link rel="icon" type="image/png" href="<?=ROOT?>favicon.png">
   <?=$css?>
   <link rel="stylesheet" href="<?=ROOT?>fonts/before-the-rain.css">
