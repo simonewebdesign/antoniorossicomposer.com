@@ -1,7 +1,7 @@
 <div class="disc clearfix">
 
 	<a class="fancybox" rel="discs" href="<?=ROOT?>img/covers/<?=$disc->id?>.png">
-		<img class="lazy" src="<?=ROOT?>img/trans.gif" data-original="<?=ROOT?>img/covers/<?=$disc->id?>.png" width=200 alt="<?=$disc->title?>">
+		<img class="lazy" src="<?=ROOT?>img/trans.gif" data-original="<?=ROOT?>img/covers/<?=$disc->id?>.png" width=200 alt="<?=htmlentities($disc->title, ENT_QUOTES)?>">
 	</a>
 
 	<div class=metadata>
