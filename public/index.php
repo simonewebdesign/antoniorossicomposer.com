@@ -31,11 +31,11 @@
 
 	<div id="intro">
 		<h1><span>A</span><span>n</span><span>t</span><span>o</span><span>n</span><span>i</span><span>o</span><span>R</span><span>o</span><span>s</span><span>s</span><span>i</span></h1>
-		<h2>Composer</h2>
+		<h2><?=$lang == 'en' ? 'Composer' : 'Compositore'?></h2>
 	</div>
 
 	<div id="skip-intro">
-	<?=$lang == 'it' ? 'Salta' : 'Skip'?> Intro <br>↓
+	<?=$lang == 'en' ? 'Skip' : 'Salta'?> Intro <br>↓
 	</div>
 
 </div>
